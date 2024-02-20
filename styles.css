@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 10vh;
+    z-index: 999;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-title-ctr {
+    position: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav-search-ctr {
+    display: flex;
+    font-size: 12px;
+}
+.nav-img {
+    display: inline;
+    float: left;
+    justify-content: center;
+    height: 85px;
+    width: auto;
+}
+
+.nav-title {
+    display: inline;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 65px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.input {
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+    outline: 1px solid lightgrey;
+}
+
+button[type="submit"] {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+button:active {
+    transform: translate(0em, 0.2em);
+}
+
+.info-ctr {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url(./assets/default.jpeg);
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card {
+    color: black;
+    background: linear-gradient(180deg, orange, hsl(210, 100%, 75%));
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    border-radius: 40px;
+    text-align: center;
+    border: 4px solid black;
+    box-shadow: 5px 5px 30px;
+    bottom: 100px;
+    min-width: 20vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info-card h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.info-card .temp {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.info-card .humidity, .info-card .description {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.info-card .emoji {
+    font-size: 6rem;
+    margin: 0;
+}
+
